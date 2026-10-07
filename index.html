@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Renaro Labs — a small independent research lab exploring efficient AI, sparse capability acquisition, and reproducible systems." />
+  <meta name="theme-color" content="#071016" />
+  <title>Renaro Labs — research under constraint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav-shell">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Renaro Labs home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>RENARO <b>LABS</b></span>
+      </a>
+      <div class="nav-links">
+        <a href="#thesis">thesis</a>
+        <a href="#fasa">fasa</a>
+        <a href="#roadmap">roadmap</a>
+        <a href="#team">team</a>
+      </div>
+      <a class="nav-cta" href="#fasa">explore research <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container section-pad">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> independent ai research · east java</div>
+        <h1>researching how <em>small</em> models can do more.</h1>
+        <p class="hero-lede">renaro labs is a small, resource-conscious research lab investigating efficient ai systems, adaptive model collaboration, and reproducible machine learning under real constraints.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#fasa">see the current program <span>→</span></a>
+          <a class="btn ghost" href="#thesis">our thesis</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>01</b> small models</span>
+          <span><b>02</b> sparse compute</span>
+          <span><b>03</b> measurable trade-offs</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-label="abstract Renaro research system visualization">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="core-grid">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="system-core">
+          <div class="core-tag">RENARO / FASA</div>
+          <div class="core-title">CAPABILITY<br><span>ACQUISITION</span></div>
+          <div class="core-status"><i></i> controller concept</div>
+        </div>
+        <div class="float-card card-one"><span>state</span><strong>partial reasoning</strong></div>
+        <div class="float-card card-two"><span>decision</span><strong>expert / stop</strong></div>
+        <div class="float-card card-three"><span>output</span><strong>typed artifact</strong></div>
+        <svg class="hero-lines" viewBox="0 0 620 620" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M310 310 C210 220 120 190 48 160" />
+          <path d="M310 310 C420 235 505 205 575 170" />
+          <path d="M310 310 C430 380 492 440 562 500" />
+          <circle cx="48" cy="160" r="4"/><circle cx="575" cy="170" r="4"/><circle cx="562" cy="500" r="4"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="research focus">
+      <div class="ticker-track">
+        <span>small language models</span><i>✦</i><span>local inference</span><i>✦</i><span>quantization</span><i>✦</i><span>model routing</span><i>✦</i><span>capability repair</span><i>✦</i><span>edge ai</span><i>✦</i>
+        <span>small language models</span><i>✦</i><span>local inference</span><i>✦</i><span>quantization</span><i>✦</i><span>model routing</span><i>✦</i><span>capability repair</span><i>✦</i><span>edge ai</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="thesis" class="section container section-pad">
+      <div class="section-heading reveal">
+        <div class="section-kicker">01 / thesis</div>
+        <h2>constraint is part of the research question.</h2>
+        <p>renaro is designed around a practical premise: compute, memory, latency, and deployment constraints are not just engineering annoyances. they can shape better research questions.</p>
+      </div>
+
+      <div class="principles-grid">
+        <article class="principle reveal">
+          <div class="principle-num">01</div>
+          <h3>efficient by default</h3>
+          <p>prefer small models, frozen specialists, quantized serving, and sparse intervention over brute-force scale.</p>
+          <span class="line-arrow">↗ resource-aware design</span>
+        </article>
+        <article class="principle reveal delay-1">
+          <div class="principle-num">02</div>
+          <h3>failure-aware</h3>
+          <p>study what a system is missing at the moment it fails, not only what it predicts from the initial prompt.</p>
+          <span class="line-arrow">↗ state-conditioned reasoning</span>
+        </article>
+        <article class="principle reveal delay-2">
+          <div class="principle-num">03</div>
+          <h3>evidence over theater</h3>
+          <p>benchmarks, ablations, matched budgets, telemetry, and reproducible configs matter more than a flashy demo.</p>
+          <span class="line-arrow">↗ measurable claims</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="fasa" class="section section-dark section-pad">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="section-kicker">02 / current research program</div>
+            <h2>fasa</h2>
+          </div>
+          <p><strong>failure-aware sparse capability acquisition</strong> asks whether a small language model can detect its current capability gap, acquire only the missing capability from a specialist, and continue reasoning with a verifiable intervention.</p>
+        </div>
+
+        <div class="fasa-console reveal delay-1">
+          <div class="console-top">
+            <div class="console-title"><span class="led"></span> fasa / system view</div>
+            <div class="console-label">proposal v1 · oct 2026</div>
+          </div>
+          <div class="architecture" id="architecture">
+            <div class="flow-node main-node active" data-node="slm">
+              <span class="node-type">primary reasoner</span>
+              <strong>qwen3-1.7b</strong>
+              <small>local reasoning / frozen</small>
+            </div>
+            <div class="flow-arrow a1">↓</div>
+            <div class="flow-node" data-node="state">
+              <span class="node-type">state</span>
+              <strong>partial reasoning</strong>
+              <small>task + trace + verifier signals</small>
+            </div>
+            <div class="flow-arrow a2">↓</div>
+            <div class="flow-node accent" data-node="gap">
+              <span class="node-type">diagnosis</span>
+              <strong>capability-gap detector</strong>
+              <small>latent gap distribution</small>
+            </div>
+            <div class="flow-arrow a3">↓</div>
+            <div class="flow-node accent" data-node="router">
+              <span class="node-type">routing</span>
+              <strong>counterfactual utility router</strong>
+              <small>gain − λ · acquisition cost</small>
+            </div>
+
+            <div class="advisor-grid">
+              <button class="advisor" data-node="math"><span>math</span><strong>qwen2.5-math-7b</strong><small>derivation / symbolic reasoning</small></button>
+              <button class="advisor" data-node="code"><span>code</span><strong>qwen2.5-coder-7b</strong><small>patch / debugging / implementation</small></button>
+              <button class="advisor" data-node="bio"><span>biomedical</span><strong>biomistral-7b</strong><small>specialized science knowledge</small></button>
+              <button class="advisor" data-node="legal"><span>legal</span><strong>saul-7b-instruct-v1</strong><small>rules / issue analysis</small></button>
+              <button class="advisor" data-node="general"><span>general</span><strong>qwen3-8b</strong><small>fallback / broad reasoning</small></button>
+            </div>
+
+            <div class="artifact-row">
+              <div class="artifact-box" data-node="artifact"><span>artifact</span><strong>structured capability artifact</strong><small>derivation · patch · fact · rule · strategy</small></div>
+              <div class="artifact-box verifier" data-node="verify"><span>gate</span><strong>verification gate</strong><small>accept · reject · retry</small></div>
+            </div>
+            <div class="continue-node" data-node="continue">↳ main slm continues with accepted evidence</div>
+          </div>
+          <div class="console-foot">click a node to inspect its role</div>
+        </div>
+
+        <div class="fasa-details" id="fasaDetails">
+          <article class="detail-panel active" data-detail="slm"><span>01</span><h3>keep the small model primary</h3><p>the main slm is not replaced. it remains the local reasoner; specialists exist only as capability providers when the controller predicts that intervention is worth the cost.</p></article>
+          <article class="detail-panel" data-detail="state"><span>02</span><h3>route from the reasoning state</h3><p>the controller can consider the task, partial reasoning, recent verifier signals, self-confidence, and lightweight failure patterns instead of looking only at the initial prompt.</p></article>
+          <article class="detail-panel" data-detail="gap"><span>03</span><h3>diagnose the missing capability</h3><p>a lightweight detector maps the current state to a capability-gap distribution. the inference-time representation can stay compact and need not produce a verbose diagnosis.</p></article>
+          <article class="detail-panel" data-detail="router"><span>04</span><h3>choose expert or stop</h3><p>the proposed decision compares expected counterfactual improvement with acquisition cost and includes a null action: continue without consulting anyone.</p></article>
+          <article class="detail-panel" data-detail="math"><span>05</span><h3>math specialist</h3><p>qwen2.5-math-7b-instruct supplies targeted symbolic manipulation, derivations, and mathematical reasoning artifacts.</p></article>
+          <article class="detail-panel" data-detail="code"><span>06</span><h3>code specialist</h3><p>qwen2.5-coder-7b-instruct supplies focused implementation reasoning, bug diagnoses, patches, and test insights.</p></article>
+          <article class="detail-panel" data-detail="bio"><span>07</span><h3>biomedical specialist</h3><p>biomistral-7b is intended for specialized biomedical terminology, scientific knowledge, and evidence-style support.</p></article>
+          <article class="detail-panel" data-detail="legal"><span>08</span><h3>legal specialist</h3><p>saul-7b-instruct-v1 is intended for legal terminology, rule-oriented reasoning, and issue/application style analysis.</p></article>
+          <article class="detail-panel" data-detail="general"><span>09</span><h3>generalist fallback</h3><p>qwen3-8b provides broad reasoning capability when the specialized pool does not clearly match the failure state.</p></article>
+          <article class="detail-panel" data-detail="artifact"><span>10</span><h3>exchange capability, not whole answers</h3><p>the interface is deliberately typed: a specialist returns a compact derivation, patch, fact, rule, or reasoning strategy rather than regenerating the full task solution.</p></article>
+          <article class="detail-panel" data-detail="verify"><span>11</span><h3>verify before committing</h3><p>the verifier gate checks whether the artifact actually helps. deterministic checks are preferred when available, with rejection or retry when the evidence is not trustworthy.</p></article>
+          <article class="detail-panel" data-detail="continue"><span>12</span><h3>return control to the slm</h3><p>accepted evidence goes back into the primary model's reasoning process. sparse consultation keeps the system centered on local inference.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container section-pad">
+      <div class="research-stats reveal">
+        <div class="stat"><span>main model</span><strong>1.7B</strong><small>qwen3-1.7b</small></div>
+        <div class="stat"><span>advisor pool</span><strong>5</strong><small>heterogeneous frozen experts</small></div>
+        <div class="stat"><span>core domains</span><strong>4</strong><small>math · code · biomedical · legal</small></div>
+        <div class="stat"><span>research plan</span><strong>10w</strong><small>baseline → paper</small></div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section container section-pad">
+      <div class="section-heading split reveal">
+        <div>
+          <div class="section-kicker">03 / execution</div>
+          <h2>10 weeks from baseline to paper.</h2>
+        </div>
+        <p>the current roadmap deliberately front-loads baselines and infrastructure, then freezes the method before the final experiment cycle.</p>
+      </div>
+
+      <div class="roadmap" id="roadmapList">
+        <button class="road-step active reveal" data-week="1"><span>w1–2</span><strong>baseline</strong><small>research lock · serving layer · cost floor</small></button>
+        <button class="road-step reveal delay-1" data-week="3"><span>w3–4</span><strong>data + detector</strong><small>counterfactual states · gap prediction</small></button>
+        <button class="road-step reveal delay-2" data-week="5"><span>w5–6</span><strong>router + system</strong><small>utility prediction · artifact gate · e2e loop</small></button>
+        <button class="road-step reveal" data-week="7"><span>w7–8</span><strong>experiments</strong><small>matched budgets · ablations · cross-domain stress</small></button>
+        <button class="road-step reveal delay-1" data-week="9"><span>w9–10</span><strong>paper</strong><small>results-first writing · verification · release package</small></button>
+      </div>
+      <div class="road-detail" id="roadDetail">
+        <div class="road-meta">W1–2 / foundation</div>
+        <h3>baseline first. no learning yet.</h3>
+        <p>freeze the experimental specification, verify local inference for the main model and advisor pool, define the evaluation harness, and establish performance / latency / memory baselines before training a controller.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">04 / what we measure</div>
+          <h2>better means a better frontier.</h2>
+          <p>renaro's proposal does not treat accuracy as the only scoreboard. quality has to be read together with the resources needed to obtain it.</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric reveal"><span>task quality</span><strong>accuracy / utility</strong><small>does the task actually improve?</small></article>
+          <article class="metric reveal delay-1"><span>consultation sparsity</span><strong>expert calls / task</strong><small>how often does the system ask for help?</small></article>
+          <article class="metric reveal delay-2"><span>transfer cost</span><strong>tokens / latency</strong><small>how much communication does the repair need?</small></article>
+          <article class="metric reveal"><span>deployment cost</span><strong>memory / energy</strong><small>can it remain practical on constrained hardware?</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section container section-pad">
+      <div class="section-heading split reveal">
+        <div>
+          <div class="section-kicker">05 / people</div>
+          <h2>small team. explicit ownership.</h2>
+        </div>
+        <p>the working model documented in the roadmap separates systems/inference, data/evaluation, and method/learning, with the full team sharing weekly research review and paper ownership.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="person-card reveal">
+          <div class="avatar avatar-a">MF</div>
+          <div><span>founding member · paper author</span><h3>Muhammad Fariq Faqih</h3><p>systems-minded ai engineer interested in practical machine learning, computer vision, and low-level software/hardware interfaces.</p></div>
+        </article>
+        <article class="person-card reveal delay-1">
+          <div class="avatar avatar-b">MA</div>
+          <div><span>founding member · paper author</span><h3>Muhammad Alim Mustofa</h3><p>renaro research contributor listed on the fasa proposal and part of the lab's small collaborative research unit.</p></div>
+        </article>
+        <article class="person-card reveal delay-2">
+          <div class="avatar avatar-c">DR</div>
+          <div><span>founding member · paper author</span><h3>Dio Ramadhany</h3><p>renaro research contributor listed on the fasa proposal and part of the lab's collaborative execution team.</p></div>
+        </article>
+        <article class="person-card reveal">
+          <div class="avatar avatar-d">MA</div>
+          <div><span>founding member · paper author</span><h3>Mu'adz Abdulloh</h3><p>renaro research contributor listed on the fasa proposal and part of the lab's collaborative research unit.</p></div>
+        </article>
+      </div>
+
+      <div class="ownership-grid reveal">
+        <div><span>R1</span><strong>systems / inference</strong><small>serving · quantization · orchestration · profiling</small></div>
+        <div><span>R2</span><strong>data / evaluation</strong><small>benchmarks · counterfactual data · metrics · statistics</small></div>
+        <div><span>R3</span><strong>method / learning</strong><small>gap detector · utility router · training · ablations</small></div>
+      </div>
+    </section>
+
+    <section class="section section-dark section-pad manifesto">
+      <div class="container manifesto-inner reveal">
+        <div class="section-kicker">06 / lab note</div>
+        <blockquote>“the point is not to build the largest system. it is to understand how little system is enough — and where that limit actually breaks.”</blockquote>
+        <div class="manifesto-sign"><span>RENARO LABS</span><i></i><small>research under constraint</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RENARO <b>LABS</b></span></div>
+      <div class="footer-note">independent research · efficient ai · reproducible systems</div>
+      <a href="#top" class="to-top">back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
